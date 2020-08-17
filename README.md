@@ -24,3 +24,12 @@ end)
 
 # Video
 https://streamable.com/c9t8ku
+
+# Music Credits
+All music included in this mod is available for free, provided by Aim to Head's official youtube:
+https://www.youtube.com/channel/UC1KJEk-EZMmDF9DJKMK5OCQ
+
+## Tracks
+[Altar] https://www.youtube.com/watch?v=7supUJ10_Fc
+[Nocturnal] https://www.youtube.com/watch?v=1M0ddgyEcc0
+[They Exist] https://www.youtube.com/watch?v=C0i_HN8JhNU
