@@ -5,8 +5,8 @@ Get audio wave data, with some options...
 Add fivem-getwave to your resources directory (through git or download).
 
 # Usage
-If you want to get the wave data from a local file, ensure you have placed it inside the "nui/files" dreictory.
-You will also need to define your files in the `fxmanifest.lua`.
+If you want to get the wave data from a local file, ensure you have placed it inside the "nui/files" directory.
+You will also need to define your audio files in the `fxmanifest.lua`.
 
 ```
 local url         = "files/altar.mp3" 
@@ -19,7 +19,7 @@ end)
 
 # Command
 ```
-/wave:visualize filters/altar.mp3 1 10000
+/wave:visualize files/altar.mp3 1 10000
 ```
 
 # Video
