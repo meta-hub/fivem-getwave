@@ -23,7 +23,7 @@ end)
 ```
 
 # Video
-https://streamable.com/2h3fy1
+https://streamable.com/mmtzgm
 
 # Music Credits
 All music included in this mod is available for free, provided by Aim to Head's official youtube:
