@@ -6,6 +6,7 @@
   <body>
     <script type="text/javascript">
       (function() {   
+        var player;
 
         window.AudioContext = window.AudioContext || window.webkitAudioContext;
         const audioContext = new AudioContext();
@@ -20,15 +21,22 @@
                 var wave = FilterData(audioBuffer,sampleSize);
 
                 if (play) {
-                  var source    = audioContext.createBufferSource();
-                  source.buffer = audioBuffer;
+                  //var source    = audioContext.createBufferSource();
+                  //source.buffer = audioBuffer;
 
-                  source.connect(audioContext.destination);
-                  source.start(0);
-                }
-
-                if (callback) {
-                  callback(wave,audioBuffer.duration);
+                  //source.connect(audioContext.destination);
+                  //source.start(0);
+                  player = new Audio(url);
+                  player.callback = (callback != undefined ? callback : false);
+                  player.wave = wave;
+                  player.duration = audioBuffer.duration;
+                  player.addEventListener("loadeddata",function() {
+                    if (this.callback) {
+                      callback(this.wave,this.duration);
+                    }
+                    this.volume = 0.5;
+                    this.play();
+                  })
                 }
               });
             });
